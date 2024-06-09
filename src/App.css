@@ -1,38 +1,123 @@
-.App {
-  text-align: center;
+@import url('https://fonts.googleapis.com/css2?family=Plus+Jakarta+Sans:ital,wght@0,200..800;1,200..800&display=swap');
+
+* {
+    font-family: "Plus Jakarta Sans";
 }
 
-.App-logo {
-  height: 40vmin;
-  pointer-events: none;
+.container {
+    display: flex;
+    justify-content: center;
+    height: 80vh;
+    width: 100%;
+    align-items: end;
 }
 
-@media (prefers-reduced-motion: no-preference) {
-  .App-logo {
-    animation: App-logo-spin infinite 20s linear;
-  }
+.inputdiv{
+    margin-top: 5px;
+}
+.innerdiv {
+    border-radius: 5px;
+    height: 70vh;
+    border: 1px solid #7a4e4e;
+    padding: 15px 20px;
+    display: flex;
+    flex-direction: column;
+    justify-content: end;
+
 }
 
-.App-header {
-  background-color: #282c34;
-  min-height: 100vh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  justify-content: center;
-  font-size: calc(10px + 2vmin);
-  color: white;
+
+.msgcontainer {
+    width: 300px;
+    height: 100%;
+    overflow-y: scroll;
+    scrollbar-width: none;
+    /* Firefox */
+    -ms-overflow-style: none;
+    /* Internet Explorer 10+ */
+}
+/* 
+.msgcontainer::-webkit-scrollbar {
+    WebKit
+    width: 0;
+    height: 0;
+} */
+
+.send-button {
+    background-color: #007BFF;
+    color: white;
+    border: none;
+    padding: 5px 10px;
+    font-size: 16px;
+    cursor: pointer;
+    border-radius: 5px;
+    transition: background-color 0.3s ease;
 }
 
-.App-link {
-  color: #61dafb;
+.send-button:hover {
+    background-color: #0056b3;
 }
 
-@keyframes App-logo-spin {
-  from {
-    transform: rotate(0deg);
-  }
-  to {
-    transform: rotate(360deg);
-  }
+.send-button:active {
+    background-color: #004085;
+}
+
+.input-field {
+    width: 250px;
+    padding: 5px;
+    font-size: 16px;
+    margin-right: 3px;
+    border: 1px solid #7a4e4e;
+    border-radius: 5px;
+    box-sizing: border-box;
+}
+
+
+.input-field:focus {
+    outline: none;
+}
+
+.position-absolute {
+    position: absolute;
+    bottom: 5%;
+    right: 5%;
+}
+
+
+.messages{
+    padding: 3px 5px;
+    background-color: rgba(165, 42, 42, 0.804);
+    margin-top: 5px;
+    border-radius: 2px;
+    display: flex;
+    justify-content: space-between;
+   gap: 5px;
+   max-width: 200px;
+   width: auto;
+}
+.p1container{
+    width: 80%;
+}
+.p1 {
+    color: white;
+    margin: 0;
+    font-size: 14px;
+    word-wrap: break-word;
+    /* display: flex; */
+    /* justify-content: center; */
+}
+
+.p2container{
+    max-width: 50px;
+    min-width: 40px;
+ display: flex;
+ flex-direction: column;
+ justify-content: end;   
+ align-items: center;
+}
+
+.p2 {
+    color: white;
+    margin: 0;
+    font-size: 8px;
 }
