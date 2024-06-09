@@ -58,7 +58,7 @@ const ChatPage2 = () => {
 
                                     <div className='messages'
 
-                                        style={{ backgroundColor: item.user === "user2" ? "#3572EF" : "#3ABEF9" }}
+                                        style={{ backgroundColor: item.user === "user2" ? "#EF9C66" : "#FCDC94" }}
                                     >
                                         <div className='p1container' >
                                             <p className='p1'>{item.message}</p>
